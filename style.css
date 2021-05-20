@@ -1,3 +1,5 @@
+/* Stylesheet reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -47,16 +49,14 @@ nav ul {
 nav ul li {
   display: inline;
   margin-left: 15px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 15px;
   cursor: pointer;
 }
 
-nav ul li a {
-  text-decoration: none;
-}
-
+nav ul li a,
 nav ul li a:visited {
+  text-decoration: none;
   color: #484848;
 }
 
@@ -72,11 +72,13 @@ nav ul li a:visited {
   outline: none;
   width: 90%;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 
 a i,
 li i {
   padding-left: 10px;
+  margin-right: 5px;
 }
 
 nav ul li a:hover,
@@ -86,8 +88,41 @@ nav ul li:hover {
   animation-fill-mode: forwards;
 }
 
+/* Animation that runs when navigating over text in the navigation bar */
+
 @keyframes navigationBarHoverEffect {
   100% {
     color: #e60012;
   }
+}
+
+#bottom-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Dropdown menus in the navigation bar */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.show {
+  display: block;
 }
