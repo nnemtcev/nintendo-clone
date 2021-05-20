@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+/* Header and navigation bar styles */
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #484848;
+  border-bottom: 1px solid #dadada;
+}
+
+header > a {
+  width: 120px;
+  height: 55px;
+  background-color: #e60012;
+  color: #fff;
+}
+
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-center img {
+  filter: brightness(20);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #484848;
+}
+
+#nav-bar-search {
+  justify-self: flex-start;
+  flex-basis: 55%;
+  margin-left: 20px;
+  border-bottom: 1px solid #484848;
+}
+
+#nav-bar-search input {
+  border: 0;
+  outline: none;
+  width: 90%;
+}
+
+i {
+  padding-left: 10px;
+}
+
+nav ul li a:hover,
+nav ul li:hover {
+  animation-name: navigationBarHoverEffect;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigationBarHoverEffect {
+  100% {
+    color: #e60012;
+  }
+}
