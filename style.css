@@ -35,6 +35,11 @@ header > a {
   filter: brightness(20);
 }
 
+nav {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
 nav ul {
   list-style: none;
 }
@@ -43,7 +48,7 @@ nav ul li {
   display: inline;
   margin-left: 15px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -57,7 +62,7 @@ nav ul li a:visited {
 
 #nav-bar-search {
   justify-self: flex-start;
-  flex-basis: 55%;
+  flex-basis: 350px;
   margin-left: 20px;
   border-bottom: 1px solid #484848;
 }
@@ -66,9 +71,11 @@ nav ul li a:visited {
   border: 0;
   outline: none;
   width: 90%;
+  padding-bottom: 7px;
 }
 
-i {
+a i,
+li i {
   padding-left: 10px;
 }
 
