@@ -75,8 +75,8 @@ nav ul li a:visited {
   cursor: pointer;
 }
 
-a i,
-li i {
+nav a i,
+nav li i {
   padding-left: 10px;
   margin-right: 5px;
 }
@@ -176,11 +176,96 @@ nav ul li:hover {
   transition: color 0.15s;
 }
 
-.dropdown-exit-btn:hover {
+.dropdown-exit-btn:hover,
+#wish-list-label {
   color: #e60012;
+}
+
+#wish-list-label {
+  font-weight: bold;
 }
 
 #hero-image img {
   width: 100%;
   height: auto;
+}
+
+#hero-image {
+  padding: 25px 20px;
+  background-color: #d6f0fa;
+}
+
+/* This represents the section of content below the Stardew Valley hero image. */
+
+.game-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.game-info span,
+h1 {
+  color: #484848;
+}
+
+.game-info span {
+  font-size: 14px;
+}
+
+.game-info span:first-child {
+  border-bottom: 2px solid #e60012;
+  padding-bottom: 5px;
+}
+
+h1 {
+  margin: 20px 0 10px 0;
+}
+
+#add-wish-list-btn {
+  display: block;
+  color: #e60012;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+#add-wish-list-btn i {
+  font-size: 20px;
+}
+
+#add-wish-list-btn span {
+  font-size: 16px;
+}
+
+#purchase-bonus {
+  display: block;
+  margin-top: 10px;
+}
+
+#purchase-bonus img {
+  height: 24px;
+}
+
+.game-purchase {
+  margin-top: 20px;
+  display: flex;
+}
+
+#buy-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 18px;
+  font-size: 20px;
+  width: 100%;
+  background-color: #e60012;
+  border-radius: 5px;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 28px;
+  color: #484848;
+  margin-right: 20px;
 }
