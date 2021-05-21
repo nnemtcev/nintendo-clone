@@ -117,7 +117,7 @@ nav ul li:hover {
   z-index: 1;
   margin-top: 10px;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .dropdown-tiles {
@@ -178,4 +178,9 @@ nav ul li:hover {
 
 .dropdown-exit-btn:hover {
   color: #e60012;
+}
+
+#hero-image img {
+  width: 100%;
+  height: auto;
 }
