@@ -101,28 +101,81 @@ nav ul li:hover {
   justify-content: center;
   margin-top: 10px;
   padding-bottom: 10px;
+  position: relative;
 }
 
 /* Dropdown menus in the navigation bar */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .dropdown-content {
   display: none;
+  width: 100vw;
   box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
-  min-width: 160px;
   position: absolute;
   z-index: 1;
   margin-top: 10px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-tiles {
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown-content a {
-  display: block;
   padding: 16px 20px;
+}
+
+.dropdown-content-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dropdown-content-box-name {
+  margin-top: 10px;
+}
+
+.dropdown-content-box img {
+  width: 100%;
+  height: 68px;
+  object-fit: contain;
+  background-color: white;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dropdown-content-box img:hover {
+  animation-name: dropdownContentBoxHoverEffect;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
 
 .show {
   display: block;
+}
+
+@keyframes dropdownContentBoxHoverEffect {
+  100% {
+    background-color: #e60012;
+  }
+}
+
+.dropdown-exit-btn {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: rotate(45deg);
+  color: #727272;
+  transition: color 0.15s;
+}
+
+.dropdown-exit-btn:hover {
+  color: #e60012;
 }
